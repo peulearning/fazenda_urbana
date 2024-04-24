@@ -101,6 +101,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_relatorio.Designer.cs">
+      <DependentUpon>frm_relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_vendas.Designer.cs">
+      <DependentUpon>frm_vendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_pessoas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_pessoas.Designer.cs">
+      <DependentUpon>frm_pessoas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_categorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,8 +143,26 @@
     <Compile Include="frm_produtos.Designer.cs">
       <DependentUpon>frm_produtos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_sair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_sair.Designer.cs">
+      <DependentUpon>frm_sair.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relatorio.resx">
+      <DependentUpon>frm_relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_vendas.resx">
+      <DependentUpon>frm_vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_pessoas.resx">
+      <DependentUpon>frm_pessoas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_categorias.resx">
       <DependentUpon>frm_categorias.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_produtos.resx">
       <DependentUpon>frm_produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_sair.resx">
+      <DependentUpon>frm_sair.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -169,6 +214,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="campos.ico" />
+    <None Include="images\icones\logo-UNIP.png" />
+    <None Include="images\icones\sair.png" />
+    <None Include="images\icones\vendas.png" />
+    <None Include="images\icones\relatorios.png" />
+    <None Include="images\icones\pessoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dados\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

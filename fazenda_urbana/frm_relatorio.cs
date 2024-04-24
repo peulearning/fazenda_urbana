@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace fazenda_urbana
 {
-    public partial class frm_categorias : Form
+    public partial class frm_relatorio : Form
     {
-        public frm_categorias()
+        public frm_relatorio()
         {
             InitializeComponent();
-        }
-
-        private void frm_categorias_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fazenda_urbana.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,19 @@ namespace fazenda_urbana
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_menu());
+
+            // Conexão com o banco de dados
+            if (Loader.Connect())
+            {
+                Application.Run(new frm_menu());
+            }
+            else
+            {
+                MessageBox.Show("Erro ao conectar-se ao banco de dados. Verifique o console para mais detalhes.");
+            }
+
+            // Desconexão do banco de dados
+            Loader.Disconnect();
         }
     }
 }
