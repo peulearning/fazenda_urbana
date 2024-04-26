@@ -78,6 +78,7 @@
             this.txt_descricao.Name = "txt_descricao";
             this.txt_descricao.Size = new System.Drawing.Size(100, 20);
             this.txt_descricao.TabIndex = 3;
+            this.txt_descricao.TextChanged += new System.EventHandler(this.txt_descricao_TextChanged);
             // 
             // txt_valor
             // 
@@ -85,6 +86,7 @@
             this.txt_valor.Name = "txt_valor";
             this.txt_valor.Size = new System.Drawing.Size(100, 20);
             this.txt_valor.TabIndex = 4;
+            this.txt_valor.TextChanged += new System.EventHandler(this.txt_valor_TextChanged);
             // 
             // cb_categoria
             // 
@@ -93,6 +95,7 @@
             this.cb_categoria.Name = "cb_categoria";
             this.cb_categoria.Size = new System.Drawing.Size(121, 21);
             this.cb_categoria.TabIndex = 5;
+            this.cb_categoria.SelectedIndexChanged += new System.EventHandler(this.cb_categoria_SelectedIndexChanged);
             // 
             // btn_novo
             // 
@@ -102,6 +105,7 @@
             this.btn_novo.TabIndex = 6;
             this.btn_novo.Text = "Novo";
             this.btn_novo.UseVisualStyleBackColor = true;
+            this.btn_novo.Click += new System.EventHandler(this.btn_novo_Click);
             // 
             // btn_editar
             // 
@@ -121,6 +125,7 @@
             this.btn_excluir.TabIndex = 8;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // btn_cancelar
             // 

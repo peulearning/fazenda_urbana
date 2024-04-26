@@ -26,5 +26,50 @@ namespace fazenda_urbana
         {
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_cod_vendas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_qtd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_valor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_item_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_vendas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_finalizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

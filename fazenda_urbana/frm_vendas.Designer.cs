@@ -62,6 +62,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // btn_venda
             // 
@@ -76,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 65);
+            this.label2.Location = new System.Drawing.Point(154, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 3;
@@ -127,6 +128,7 @@
             this.btn_item.TabIndex = 8;
             this.btn_item.Text = "Adicionar Item";
             this.btn_item.UseVisualStyleBackColor = true;
+            this.btn_item.Click += new System.EventHandler(this.btn_item_Click);
             // 
             // dataGridView1
             // 
@@ -135,6 +137,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(535, 150);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txt_cod_vendas
             // 
@@ -142,6 +145,7 @@
             this.txt_cod_vendas.Name = "txt_cod_vendas";
             this.txt_cod_vendas.Size = new System.Drawing.Size(100, 20);
             this.txt_cod_vendas.TabIndex = 11;
+            this.txt_cod_vendas.TextChanged += new System.EventHandler(this.txt_cod_vendas_TextChanged);
             // 
             // txt_qtd
             // 
@@ -149,6 +153,7 @@
             this.txt_qtd.Name = "txt_qtd";
             this.txt_qtd.Size = new System.Drawing.Size(100, 20);
             this.txt_qtd.TabIndex = 13;
+            this.txt_qtd.TextChanged += new System.EventHandler(this.txt_qtd_TextChanged);
             // 
             // txt_valor
             // 
@@ -156,6 +161,7 @@
             this.txt_valor.Name = "txt_valor";
             this.txt_valor.Size = new System.Drawing.Size(100, 20);
             this.txt_valor.TabIndex = 14;
+            this.txt_valor.TextChanged += new System.EventHandler(this.txt_valor_TextChanged);
             // 
             // comboBox2
             // 
@@ -164,6 +170,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 15;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // btn_finalizar
             // 
@@ -173,6 +180,7 @@
             this.btn_finalizar.TabIndex = 16;
             this.btn_finalizar.Text = "Finalizar Venda";
             this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // frm_vendas
             // 
@@ -197,6 +205,7 @@
             this.Name = "frm_vendas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar Vendas";
+            this.Load += new System.EventHandler(this.frm_vendas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
