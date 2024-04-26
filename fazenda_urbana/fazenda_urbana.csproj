@@ -214,14 +214,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="campos.ico" />
+    <Content Include="Dados\db_farm.sql" />
     <None Include="images\icones\logo-UNIP.png" />
     <None Include="images\icones\sair.png" />
     <None Include="images\icones\vendas.png" />
     <None Include="images\icones\relatorios.png" />
     <None Include="images\icones\pessoa.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dados\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

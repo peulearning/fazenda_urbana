@@ -31,6 +31,7 @@ namespace fazenda_urbana
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_pessoas));
             this.label_nome = new System.Windows.Forms.Label();
             this.label_cpf = new System.Windows.Forms.Label();
             this.label_cnpj = new System.Windows.Forms.Label();
@@ -48,7 +49,9 @@ namespace fazenda_urbana
             this.btn_excluir = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label_nome
@@ -195,11 +198,21 @@ namespace fazenda_urbana
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::fazenda_urbana.Properties.Resources.logo_UNIP;
+            this.pictureBox1.Location = new System.Drawing.Point(648, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_pessoas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_excluir);
@@ -217,10 +230,12 @@ namespace fazenda_urbana
             this.Controls.Add(this.label_cnpj);
             this.Controls.Add(this.label_cpf);
             this.Controls.Add(this.label_nome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_pessoas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Pessoas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +260,6 @@ namespace fazenda_urbana
         private System.Windows.Forms.Button btn_excluir;
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private PictureBox pictureBox1;
     }
 }
